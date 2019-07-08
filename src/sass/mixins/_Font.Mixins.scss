@@ -8,52 +8,56 @@
 */
 
 // Produce @font-face definitions for the web fonts.
-@mixin ms-font-face($font-family-name, $cdn-folder, $cdn-font-name: "segoeui") {
+@mixin ms-font-face($font-family-name, $cdn-folder, $cdn-font-name: "zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFsdA") {
   @font-face {
     font-family: $font-family-name;
-    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-light.woff2")
+    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff2")
         format("woff2"),
-      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-light.woff")
+      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff")
         format("woff");
     font-weight: $ms-font-weight-light;
     font-style: normal;
   }
 
+
   @font-face {
     font-family: $font-family-name;
-    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-semilight.woff2")
+    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff2")
         format("woff2"),
-      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-semilight.woff")
+      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff")
         format("woff");
     font-weight: $ms-font-weight-semilight;
     font-style: normal;
   }
-
+}
+@mixin ms-font-face($font-family-name, $cdn-folder, $cdn-font-name: "zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ") {
   @font-face {
     font-family: $font-family-name;
-    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-regular.woff2")
+    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff2")
         format("woff2"),
-      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-regular.woff")
+      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff")
         format("woff");
     font-weight: $ms-font-weight-regular;
     font-style: normal;
   }
-
+}
+@mixin ms-font-face($font-family-name, $cdn-folder, $cdn-font-name: "zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdA") {
   @font-face {
     font-family: $font-family-name;
-    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-semibold.woff2")
+    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff2")
         format("woff2"),
-      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-semibold.woff")
+      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff")
         format("woff");
     font-weight: $ms-font-weight-semibold;
     font-style: normal;
   }
 
+
   @font-face {
     font-family: $font-family-name;
-    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-bold.woff2")
+    src: url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff2")
         format("woff2"),
-      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}-bold.woff")
+      url("#{$ms-font-cdn-path}/#{$cdn-folder}/#{$cdn-font-name}.woff")
         format("woff");
     font-weight: $ms-font-weight-bold;
     font-style: normal;
